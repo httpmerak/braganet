@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braganet - Em Construção</title>
+    <meta name="description" content="Braganet I J A da Silva Telecomunicacoes LTDA - Provedor de internet em São Domingos do Capim, Pará. Site oficial em breve.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-overlay"></div>
+    <div class="bg-vignette"></div>
+
+    <main class="main-card">
+        <header>
+            <span class="badge">EM CONSTRUÇÃO</span>
+            <h1>Braganet</h1>
+            <p class="tagline">Seu novo provedor de internet em São Domingos do Capim. Em breve, conexão ultraveloz para você.</p>
+        </header>
+
+        <section class="info-section">
+            <!-- Empresa Info -->
+            <div class="data-group">
+                <h3><i data-lucide="building-2"></i> Identificação</h3>
+                <div class="data-item">
+                    <span class="data-label">Razão Social</span>
+                    <span class="data-value">I J A da Silva Telecomunicacoes LTDA</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">CNPJ</span>
+                    <span class="data-value">46.958.449/0001-68</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">Situação</span>
+                    <span class="status-active">
+                        <span class="status-dot"></span>
+                        ATIVA
+                    </span>
+                </div>
+            </div>
+
+            <!-- Contato Rápido -->
+            <div class="data-group">
+                <h3><i data-lucide="phone"></i> Contato</h3>
+                <div class="data-item">
+                    <span class="data-label">WhatsApp</span>
+                    <span class="data-value">(91) 99235-7537</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">E-mail</span>
+                    <span class="data-value">ppompeu2@hotmail.com</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">Localização</span>
+                    <span class="data-value">S. Domingos do Capim - PA</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Actions -->
+        <div class="contact-actions">
+            <a href="https://wa.me/5591992357537" class="btn btn-primary" target="_blank">
+                <i data-lucide="message-circle"></i> Conversar no WhatsApp
+            </a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Avenida+Doutor+Lauro+Sodre+São+Domingos+do+Capim+PA" class="btn btn-outline" target="_blank">
+                <i data-lucide="map"></i> Ver Localização
+            </a>
+        </div>
+
+        <footer>
+            <address class="footer-addr">
+                Av. Doutor Lauro Sodre, SN, Pa 127, Centro, São Domingos do Capim - PA<br>
+                CNPJ: 46.958.449/0001-68
+            </address>
+            &copy; 2026 Braganet. Todos os direitos reservados.
+        </footer>
+    </main>
+
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Subtle parallax effect on background
+        document.addEventListener('mousemove', (e) => {
+            const moveX = (e.clientX - window.innerWidth / 2) * 0.01;
+            const moveY = (e.clientY - window.innerHeight / 2) * 0.01;
+            document.querySelector('.bg-overlay').style.transform = `translate(${moveX}px, ${moveY}px) scale(1.05)`;
+        });
+    </script>
+</body>
+</html>
